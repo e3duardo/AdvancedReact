@@ -9,21 +9,25 @@
 
 ### CommentBox Component
 
-- [ ] Shows a text area and a button
-- [ ] Users can enter input into the textarea and submit it
-- [ ] When the input is submitted, textarea should get emptied
+- [x] Shows a text area and a button
+- [x] Users can enter input into the textarea and submit it
+- [x] When the input is submitted, textarea should get emptied
 
 ### CommentList Component
 
-- [ ] Shows one 'li' element per comment
-- [ ] Text from each comment is visible
+- [x] Shows one 'li' element per comment
+- [x] Text from each comment is visible
 
 ### Comments Reducer
 
-- [ ] Properly hands actions with a type of 'SAVE_COMMENT'
-- [ ] Doens't throw an error if it gets an action with any other type
+- [x] Properly hands actions with a type of 'SAVE_COMMENT'
+- [x] Doens't throw an error if it gets an action with any other type
 
 ### SaveComment Action
 
-- [ ] Has a type of 'SAVE_COMMENT'
-- [ ] Produces an action that has a playload of the new comment's text
+- [x] Has a type of 'SAVE_COMMENT'
+- [x] Produces an action that has a playload of the new comment's text
+
+## Integrations Tests
+
+- [x] Can fetch a list of comments and display them

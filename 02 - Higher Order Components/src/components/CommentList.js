@@ -3,6 +3,10 @@ import { connect } from 'react-redux';
 
 class CommentList extends Component {
   renderComments() {
+    if (!this.props.comments.length) {
+      return <p>Nothing here!</p>;
+    }
+
     return this.props.comments.map(comment => {
       return <li key={comment}>{comment}</li>;
     });
