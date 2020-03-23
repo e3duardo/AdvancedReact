@@ -1,5 +1,5 @@
+import * as Authentication from "./controllers/authentication";
+
 export default app => {
-  app.get("/", (req, res) => {
-    res.send({ success: true });
-  });
+  app.post("/signup", Authentication.signup);
 };
