@@ -35,3 +35,7 @@ export const signup = (req, res, next) => {
     });
   });
 };
+
+export const signin = (req, res, next) => {
+  res.json({ token: tokenForTheUser(req.user) });
+};
