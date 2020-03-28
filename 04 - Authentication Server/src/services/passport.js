@@ -13,7 +13,7 @@ const localLogin = new LocalStrategy(localOptions, (email, password, done) => {
     if (err) return done(err);
     if (!user) return done(null, false);
 
-    user.comparePassword(passport, (err, isMatch) => {
+    user.comparePassword(password, (err, isMatch) => {
       if (err) return done(err);
       if (!isMatch) return done(null, false);
 
